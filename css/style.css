@@ -1,0 +1,139 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+/*************************************** ENCABEZADO *************************************/
+.encabezado {
+    padding: 30px;
+    background-image: url(https://eatandmeet.net/wp-content/uploads/2020/02/viajar.jpg);
+    background-size: cover;
+    height: 260px;
+    background-position-y: 22%;
+    font-size: 35px;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Goldman', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 96%;
+    
+}
+.h1 {
+    padding-bottom: 80px;
+}
+.h2 {
+    padding-left: 90px;
+    color: rgb(136, 12, 12);
+}
+
+/**************************************** MAIN ******************************************/
+.grid {
+    display: grid;
+    grid-template-columns: 24vw 38vw 38vw;
+    height: 120vh;
+    grid-template-areas: 
+    "datosviaje card1 card2";
+   
+}
+
+.datosviaje {
+    grid-area: "datosviaje";
+    background-color: rgb(227, 234, 238);
+    height: 120vh;
+    padding-left: 40px;
+    padding-top: 30px;
+    
+}
+.form {
+    border-radius: 10px;
+    background-color: grey;
+    padding: 15px;
+    padding-top: 30px;
+    width: 200px;
+    height: 370px;
+    text-align: center;
+    color: white;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Goldman', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.parrafo {
+    padding: 5px;
+}
+
+.btn {
+    font-size: 20px;
+    width: 110px;
+    transition: all 800ms;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Goldman', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.btn:hover {
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.inputs {
+    width: 180px;
+    border-radius: 4px;
+}
+
+.elec {
+    color: black;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Goldman', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+}
+.btnpaquet{
+    height: 40px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+.error {
+    color: black;
+    background-color: cornsilk;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: red;   
+}
+.card1{
+    grid-area: "card1"; 
+    height: 400px;
+}
+.card-text {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 28px;
+}
+
+.card2 { grid-area: "datosviaje"; }
+

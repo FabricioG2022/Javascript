@@ -5,31 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Goldman&family=Lobster&family=Orbitron:wght@700&family=Play:wght@400;700&family=Space+Grotesk:wght@500&display=swap"
+        rel="stylesheet">
+    <title>POR EL MUNDO</title>
 </head>
 
 <body>
+    <header class="encabezado">
+        <h1 class="h1">VIAJA CON NOSOTROS</h1>
+        <h2 class="h2">POR EL MUNDO VIAJES</h2>
+    </header>
+    <main class="grid">
+        <section>
+            <div class="datosviaje">
+                <form class="form" action="" id="formulario">
+                    <p class="parrafo">Destino</p>
+                    <input class="inputs" id="destino" type="text">
+                    <p class="parrafo">Lugar</p>
+                    <input class="inputs" id="lugar" type="text">
+                    <p class="parrafo">Cantidad de personas</p>
+                    <input class="inputs" id="personas" type="number">
+                    <p class="parrafo">Fecha de salida</p>
+                    <input class="inputs" id="fechsal" type="date">
+                    <p class="parrafo">Fecha de llegada</p>
+                    <input class="inputs" id="fechlleg" type="date">
+                    <input class="btn" type="submit" value="Buscar">
+                    <p class="error" id="error"></p>
+                </form>
+                <p class="elec" id="eleccion"></p>
+                <button class="btnpaquet" id="btnpaquetes" type="button">Mostrar todos los paquetes</button>
+                <div id="infoPaquetes"></div>
+            </div>
+        </section>
+        <section>
+            <div class="card1" style="width: 37vw;">
+                <img src=https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/47/f2/ef/hyatt-zilara-cancun.jpg?w=600&h=400&s=1
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Cancun</h2>
+                    <p class="card-text"><strong> Cancún es una ciudad de México ubicada en la península de Yucatán que
+                            limita con el
+                            mar Caribe y que es conocida por sus playas, los numerosos centros turísticos y la vida
+                            nocturna.</strong>
+                    </p>
 
-    
+                </div>
+                <div class="card1" style="width: 37vw;">
+                    <img src=https://cdn2.civitatis.com/estados-unidos/miami/guia/downtown-grid-m.jpg
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Miami</h2>
+                        <p class="card-text"><strong> Miami es una ciudad internacional en el extremo sureste de
+                                Florida. La
+                                influencia cubana se refleja en los cafés y las tabaquerías de la Calle Ocho en la
+                                Pequeña
+                                Habana. En las islas de barrera, al otro lado de las aguas turquesa de Bahía Vizcaína,
+                                se
+                                encuentra Miami Beach, en la cual se ubica South Beach.</strong>
+                        </p>
+                    </div>
 
-    <form action="" id="formulario">
-        <p>Destino</p>
-        <input id="destino" type="text">
-        <p>Lugar</p>
-        <input id="lugar" type="text">
-        <p>Cantidad de personas</p>
-        <input id="personas" type="number">
-        <p>Fecha de salida</p>
-        <input id="fechsal" type="date">
-        <p>Fecha de llegada</p>
-        <input id="fechlleg" type="date">
-        <br>
-        <br>
-        <input type="submit" value="buscar">
-    </form>
-    <br>
-    <p id="eleccion"></p>
-
+                </div>
+        </section>
+        <section>
+            <div class="card2" style="width: 37vw;">
+                <img src=https://t2.uc.ltmcdn.com/es/posts/5/3/1/como_organizar_un_viaje_a_grecia_35135_paso_2_600.jpg
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Grecia</h2>
+                    <p class="card-text"><strong> Grecia es un país del sureste de Europa con miles de islas en los
+                            mares Egeo y Jónico. Es famosa por sus playas, desde las arenas negras de Santorini
+                            hasta los centros turísticos de eventos en Miconos.</strong>
+                    </p>
+                </div>
+                <div class="card2" style="width: 37vw;">
+                    <img src=https://t1.uc.ltmcdn.com/es/posts/9/2/1/como_organizar_un_viaje_a_roma_35129_600.jpg
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Roma</h2>
+                        <p class="card-text"><strong>Roma, la capital de Italia, es una extensa ciudad cosmopolita que
+                                tiene a la vista casi 3,000 años de arte, arquitectura y cultura de influencia mundial.
+                                Las ruinas antiguas como las del Foro y el Coliseo evocan el poder del antiguo Imperio
+                                Romano.</strong>
+                        </p>
+                    </div>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
 
