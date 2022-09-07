@@ -49,10 +49,10 @@ const viajes = [];
 viajes.push(paquete1, paquete2, paquete3, paquete4)
 
 
-let div = document.getElementById('infoPaquetes')
-let btn = document.getElementById('btnpaquetes')
+let infoPaquetes = document.getElementById('infoPaquetes')
+let btnpaquetes = document.getElementById('btnpaquetes')
 
-btnpaquetes.addEventListener("click", infoPaq)
+btnpaquetes.addEventListener('click', infoPaq)
 
 function infoPaq(e) {
     e.preventDefault();
@@ -61,3 +61,26 @@ function infoPaq(e) {
     }
 }
 
+
+const economicos = [
+    {id: 1,
+    nombre: "Jujuy",
+    costo: 40000,
+    duracion: "4 dias"},
+    {id: 2,
+    nombre: "Merlo",
+    costo: 25000,
+    duracion: "5 dias"},
+    {id: 3,
+    nombre: "Bariloche",
+    costo: 35000,
+    duracion: "4 dias"},
+    {id: 4,
+    nombre: "Cordoba",
+    costo: 45000,
+    duracion: "7 dias"}
+]
+
+const {id,...restoInfo} = economicos
+
+console.log(economicos)
