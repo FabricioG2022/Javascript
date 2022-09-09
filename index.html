@@ -22,7 +22,7 @@
     <main class="grid">
         <section>
             <div class="datosviaje">
-                <form class="form" action="" id="formulario">
+                <form class="form" action="" id="formulario" autocomplete="off">
                     <p class="parrafo">Destino</p>
                     <input class="inputs" id="destino" type="text">
                     <p class="parrafo">Lugar</p>
@@ -38,7 +38,7 @@
                 </form>
                 <p class="elec" id="eleccion"></p>
                 <button class="btnpaquet" id="btnpaquetes" type="button">Mostrar todos los paquetes</button>
-                <div id="infoPaquetes"></div>
+                <div class="infoDePaq" id="infoPaquetes"></div>
                 
             </div>
         </section>
@@ -47,7 +47,7 @@
                 <img src=https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/47/f2/ef/hyatt-zilara-cancun.jpg?w=600&h=400&s=1
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h2 class="card-title">Cancun</h2>
+                    <h2 class="card-title"><a href="" id="cancun">Cancun</a></h2>
                     <p class="card-text"><strong> Cancún es una ciudad de México ubicada en la península de Yucatán que
                             limita con el
                             mar Caribe y que es conocida por sus playas, los numerosos centros turísticos y la vida
@@ -59,7 +59,7 @@
                     <img src=https://cdn2.civitatis.com/estados-unidos/miami/guia/downtown-grid-m.jpg
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="card-title">Miami</h2>
+                        <h2 class="card-title"><a href="" id="miami">Miami</a></h2>
                         <p class="card-text"><strong> Miami es una ciudad internacional en el extremo sureste de
                                 Florida. La
                                 influencia cubana se refleja en los cafés y las tabaquerías de la Calle Ocho en la
@@ -77,7 +77,7 @@
                 <img src=https://t2.uc.ltmcdn.com/es/posts/5/3/1/como_organizar_un_viaje_a_grecia_35135_paso_2_600.jpg
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h2 class="card-title">Grecia</h2>
+                    <h2 class="card-title"><a href="" id="grecia">Grecia</a></h2>
                     <p class="card-text"><strong> Grecia es un país del sureste de Europa con miles de islas en los
                             mares Egeo y Jónico. Es famosa por sus playas, desde las arenas negras de Santorini
                             hasta los centros turísticos de eventos en Miconos.</strong>
@@ -87,7 +87,7 @@
                     <img src=https://t1.uc.ltmcdn.com/es/posts/9/2/1/como_organizar_un_viaje_a_roma_35129_600.jpg
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="card-title">Roma</h2>
+                        <h2 class="card-title"><a href="" id="roma">Roma</a></h2>
                         <p class="card-text"><strong>Roma, la capital de Italia, es una extensa ciudad cosmopolita que
                                 tiene a la vista casi 3,000 años de arte, arquitectura y cultura de influencia mundial.
                                 Las ruinas antiguas como las del Foro y el Coliseo evocan el poder del antiguo Imperio
@@ -96,6 +96,7 @@
                     </div>
         </section>
     </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="app.js"></script>
 </body>
 
