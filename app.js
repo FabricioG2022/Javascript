@@ -1,10 +1,10 @@
 
-
+//*****************************************Variables Formulario****************************/
 let formulario = document.getElementById('formulario')
 let error = document.getElementById('error')
-
+//*****************************************Evento Formulario*******************************/
 formulario.addEventListener('submit', datosSeleccionados)
-
+//*****************************************Funcion Formulario******************************/
 function datosSeleccionados(e) {
     e.preventDefault();
     const datos = e.target
@@ -31,7 +31,8 @@ function datosSeleccionados(e) {
 
 }
 
-
+//******************************************Boton Mostrar paquetes****************/
+//******************************************Constructor***************************/
 class Paquetes {
     constructor(lugar, dias, precio) {
         this.lugar = lugar.toUpperCase()
@@ -45,35 +46,40 @@ const paquete1 = new Paquetes("Cancun,", "7 dias, 6 noches", 120000)
 const paquete2 = new Paquetes("Miami,", "8 dias, 7 noches", 150000)
 const paquete3 = new Paquetes("Roma,", "8 dias, 7 noches", 180000)
 const paquete4 = new Paquetes("Grecia,", "10 dias, 9 noches", 200000)
-
+//********************************************Array*********************************/
 const viajes = [];
-
+//********************************************Push**********************************/
 viajes.push(paquete1, paquete2, paquete3, paquete4)
 console.log(viajes)
-
+//********************************************Variables*****************************/
 let infoPaquetes = document.getElementById('infoPaquetes')
 let btnpaquetes = document.getElementById('btnpaquetes')
-
+//*********************************************Eventos******************************/
 btnpaquetes.addEventListener('click', infoPaq)
-
+//*********************************************Funcion******************************/
 function infoPaq(e) {
     e.preventDefault();
     for (const elements of viajes) {
         infoPaquetes.innerHTML += `<br>${elements.lugar} ${elements.dias} $ ${elements.sumaIVA()}`
-    }
+
+    }if (btnpaquetes.addEventListener('click', eliminarMostrar = () => {infoPaquetes.remove()})){}
+
 }
 
+
+
+//****************************************Variables Sweet Alert****************************/
 let cancun = document.getElementById('cancun')
 let miami = document.getElementById('miami')
 let grecia = document.getElementById('grecia')
 let roma = document.getElementById('roma')
-
+//****************************************Eventos Sweet Alert******************************/
 cancun.addEventListener('click', elegirCancun)
 miami.addEventListener('click', elegirMiami)
 grecia.addEventListener('click', elegirGrecia)
 roma.addEventListener('click', elegirRoma)
 
-
+//****************************************Funciones Sweet Alert****************************/
 function elegirCancun(e) {
     e.preventDefault();
     swal("Cancun tiene una rebaja del 20% por este mes, aproveche!!!")

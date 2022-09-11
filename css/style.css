@@ -32,7 +32,6 @@
 .grid {
     display: grid;
     grid-template-columns: 24vw 38vw 38vw;
-    height: 120vh;
     grid-template-areas: 
     "datosviaje card1 card2";
    
@@ -165,3 +164,42 @@
 }
 .card2 { grid-area: "datosviaje"; }
 
+.footer {
+    background-color: gray;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section1Footer {
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Goldman', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 40px;
+}
+
+.section2Footer iframe{
+    margin-top: 20px;
+   height: 300px;
+   width: 300px;
+   border-radius: 20px;
+   
+}
+
+.redes {
+    margin-top: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    color: black;
+}
