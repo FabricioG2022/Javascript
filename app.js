@@ -50,7 +50,7 @@ const paquete4 = new Paquetes("Grecia,", "10 dias, 9 noches", 200000)
 const viajes = [];
 //********************************************Push**********************************/
 viajes.push(paquete1, paquete2, paquete3, paquete4)
-console.log(viajes)
+
 //********************************************Variables*****************************/
 let infoPaquetes = document.getElementById('infoPaquetes')
 let btnpaquetes = document.getElementById('btnpaquetes')
@@ -62,7 +62,7 @@ function infoPaq(e) {
     for (const elements of viajes) {
         infoPaquetes.innerHTML += `<br>${elements.lugar} ${elements.dias} $ ${elements.sumaIVA()}`
 
-    }if (btnpaquetes.addEventListener('click', eliminarMostrar = () => {infoPaquetes.remove()})){}
+    } if (btnpaquetes.addEventListener('click', eliminarMostrar = () => { infoPaquetes.remove() })) { }
 
 }
 
@@ -112,6 +112,22 @@ function elegirRoma(e) {
         });
 
 }
+//***********************************************FETCH*****************************************/
 
 
 
+const lista = document.getElementById("listado")
+
+fetch ('/viajes.json')
+    .then ((resp) => resp.json())
+    .then ((data) => {
+        data.forEach(trips => {
+            
+            lista.innerHTML +=`
+            <h4>${trips.nombre}</h4>
+            <p>${trips.precio}</p>
+            
+            `
+            
+        });
+    })

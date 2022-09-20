@@ -1,0 +1,9 @@
+[
+    {"nombre": "Ibiza, España", "precio": "$100000", "id": 1},
+    {"nombre": "Venecia, Italia", "precio": "$250000", "id": 2},
+    {"nombre": "Orlando, EEUU", "precio": "$300000", "id": 3},
+    {"nombre": "Punta cana, Mexico", "precio": "$350000", "id": 4},
+    {"nombre": "Las Vegas, EEUU ", "precio": "$375000", "id": 5},
+    {"nombre": "Londres, Reino Unido", "precio": "$380000", "id": 6},
+    {"nombre": "Maui, Hawai", "precio": "$390000", "id": 7}
+]
